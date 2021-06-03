@@ -1,29 +1,245 @@
-body {
+html, body {
     margin: auto;
     font-family: Arial;
     font-style: normal;
+    overflow-x: hidden;
+    height: 100vh;
 }
 header {
     height: 30vh;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.anone {
-    text-decoration: none;
-}
-
-.header_nav {
-    width: 20vw;
+.first_div {
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    width: 680px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
 }
 
 .img {
+    position: absolute;
+    width: 1240px;
     height: 100vh;
-    width: 70vw;
+    left: 680px;
+    top: 0px;
     background-image: url("image/image_summer.jpg");
-
+    background-repeat: no-repeat;
 }
+
+/* HEADER PART CSS */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_div {
+    width: 280px;
+}
+
+.alogo {
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.pineapple {
+    position: absolute;
+    padding-left: 15px;
+    margin-top: 120px;
+}
+
+.first_a {
+    margin-left: 36px;
+}
+
+.anone {
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 16px;
+    color: #6A707B;
+    line-height: 26px;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 114px;
+}
+
+.header_nav {
+    width: 400px;
+    display: inline-block;
+}
+
+/* MAIN PART CSS*/
+
+h1 {
+    position: absolute;
+    top: 374px;
+    margin-left: 140px;
+    width: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    position: absolute;
+    top: 433px;
+    left: 140px;
+    color: #6A707B;
+    width: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.vline {    
+    position: absolute;
+    width: 4px;
+    height: 70px;
+    left: 100px;
+    top: 539px;
+    background: #4066A5;
+    z-index: 7;
+    margin: 0;
+}
+
+.inputfield {
+    position: absolute;
+    top: 539px;
+    left: 100px;
+    width: 663px;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E4;
+    box-sizing: border-box;
+    border-right: none;
+    padding: 23px 0 23px 44px;
+    color: #6A707B;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 4;
+}
+
+.button {
+    position: absolute;
+    top: 540px;
+    left: 681px;
+    height: 68px;
+    width: 81px;
+    z-index: 5;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E4;
+    box-sizing: border-box;
+    border-left: none;
+}
+
+.button_img {
+    position: absolute;
+    opacity: 0.3;
+    z-index: 3;
+    top: 28px;
+    right: 40px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 140px;
+    top: 663px;
+    margin: 0;
+    background: #4066A5;
+    border-radius: 3px;
+}
+
+.label_checkbox {
+    position: absolute;
+    color: #6A707B;
+    width: 359px;
+    height: 28px;
+    left: 181px;
+    top: 662px;    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.label_a {
+    color: #131821;
+}
+
+.hline {
+    position: absolute;
+    width: 400px;
+    height: 1px;
+    left: 140px;
+    top: 740px;
+    background: #E3E3E4;
+}
+
+/* FOOTER PART CSS*/
+
+.img_base1 {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 218px;
+    top: 791px;
+}
+
+.img_base2 {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 284px;
+    top: 791px;
+}
+
+.img_base3 {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 350px;
+    top: 791px;
+}
+
+.img_base4 {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 416px;
+    top: 791px;
+}
+
+/* ANIMATION PART */
+
+
+.focus_input:focus {
+    background: #FFFFFF;
+    border: 1px solid #E3E3E4;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    outline: none;
+}
+
+.hover_input:hover input {
+    background: #FFFFFF;
+    border: 1px solid #4066A5;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+.img_base1:hover {
+    background: #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+

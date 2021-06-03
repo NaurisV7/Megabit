@@ -8,56 +8,61 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="flex">
-    
-    <div>
+    <!-- DIV To seperate two side of screen-->
+    <div class="first_div">
         <!-- HEADER PART -->
         <header class="flex">
-            <div>
-                <a href="#" class="flex anone">
-                    <img src="image/Union.svg">
-                    <img src="image/pineapple..svg">
+            <div class="header_div">
+                <a href="#" class="alogo">
+                    <img src="image/Union.svg" class="logo">
+                    <img src="image/pineapple..svg" class="pineapple">
                 </a>
             </div>
-            <div>
-                <nav class="header_nav flex ">                
-                    <a href="#" class="anone">About</a>
+
+            <nav class="header_nav">
+                <div class="flex">
+                    <a href="#" class="first_a anone">About</a>
                     <a href="#" class="anone">How it works</a>
-                    <a href="#" class="anone">Contact</a>                
-                </nav>
-            </div>            
+                    <a href="#" class="anone">Contact</a>    
+                </div>
+            </nav>
         </header>
         <!-- BODY PART -->
         <body>
             <h1>Subscribe to newsletter</h1>
             <h4>Subscribe to our newsletter and get 10% discount on pineapple glasses.</h4>
-            <form>
-                <input type="text" name="email" placeholder="Type your email here...">
-                <button type="submit">
-                    <img src="image/ic_arrow.svg">
+            <hr class="vline">
+            <form class="hover_input">        
+                <input type="text" class="inputfield  focus_input" name="email" placeholder="Type your email here...">
+                <button type="submit" class="button">
+                    <img src="image/ic_arrow.svg" class="button_img">
                 </button>
-                <div>
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">
-                        I agree to
-                        <a href="#">terms of service</a>
-                    </label>
-                </div>
             </form>
-            <hr>
+            <form>
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox" class="label_checkbox">
+                    I agree to
+                    <a href="#" class="label_a">terms of service</a>
+                </label>
+            </form>
+            <hr class="hline">
         </body>
         <!-- FOOTER PART -->
         <footer>
-            <a>
-                <img src="image/Facebook.svg">
+            <a class="facebook">
+                <img src="image/Facebook.svg" class="img_base1">
             </a>
-            <a>
-                <img src="image/Instagram.svg">
+            <a class="instagram">
+                <img src="image/ic_instagram.svg">
+                <img src="image/Base.svg" class="img_base2">
             </a>
-            <a>
-                <img src="image/Twitter.svg">
+            <a class="twitter">
+                <img src="image/ic_twitter.svg">
+                <img src="image/Base.svg" class="img_base3">
             </a>
-            <a>
-                <img src="image/Youtube.svg">
+            <a class="youtube">
+                <img src="image/ic_youtube.svg">
+                <img src="image/Base.svg" class="img_base4">
             </a>
         </footer>
     </div>
