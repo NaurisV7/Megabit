@@ -19,11 +19,12 @@ header {
 
 .img {
     position: absolute;
-    width: 1240px;
-    height: 100vh;
+    width: 1620px;
+    height: 1080px;;
     left: 680px;
     top: 0px;
     background-image: url("image/image_summer.jpg");
+    background-repeat: no-repeat;
 }
 
 /* HEADER PART CSS */
