@@ -24,7 +24,6 @@ header {
     left: 680px;
     top: 0px;
     background-image: url("image/image_summer.jpg");
-    background-repeat: no-repeat;
 }
 
 /* HEADER PART CSS */
@@ -297,5 +296,170 @@ h4 {
     opacity: 1;
 }
 
+/* MOBILE VERSION*/
+
+@media only screen and (max-width: 375px) {
+    .none {
+        display: none;
+    }
+
+    body, html {
+        width: 375px;
+        height: 100vh;
+    }
+
+    .first_div {
+        width: 375px;
+        height: 100vh;
+    }
+
+    /* HEADER PART */
+
+    .header {
+        width: 375px;
+        height: 66px;
+        background: #FFFFFF;
+    }
+
+    .header_div {
+        width: 50px;
+    }
+
+    .header_nav {
+        width: 325px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 25px;
+        height: 40px;
+        left: 20px;
+        top: 10px;
+        margin: 0;
+    }
+
+    .first_a {
+        margin-left: 99px;
+    }
+
+    .anone {
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 20px;
+        padding-left: 0;
+        margin-top: 21px;
+    }
+
+    /* BACKGROUND IMAGE */
+
+    .img {
+        position: absolute;
+        width: 1119px;
+        height: 746px;
+        left: -281px;
+        top: 66px;
+    }
+
+    /* MIDDLE DIVISION*/
+
+    .mobdiv {
+        position: absolute;
+        width: 335px;
+        height: 371px;
+        left: 20px;
+        top: 254px;
+        z-index: 10;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    }
+
+    h1 {
+        width: 295px;
+        height: 34px;
+        left: 20px;
+        top: 30px;
+        margin-left: 0;
+        font-family: Georgia;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 34px;
+        color: #131821;
+    }
+
+    h4 {
+        width: 295px;
+        height: 52px;
+        left: 20px;
+        top: 74px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .inputfield {
+        width: 295px;
+        height: 60px;
+        left: 20px;
+        top: 146px;
+        padding: 18px 0 18px 19px;
+        border: 1px solid #E3E3E4;
+    }
+
+    .vline {
+        width: 4px;
+        height: 60px;
+        left: 20px;
+        top: 146px;
+    }
+
+    .button {
+        width: 24px;
+        height: 14px;
+        left: 276px;
+        top: 169px;
+        border: none;
+    }
+
+    .button_img {
+        top: 0;
+        right: 0;
+        color: #131821;
+        opacity: 1;
+    }
+
+    .checkbox {
+        width: 26px;
+        height: 26px;
+        left: 20px;
+        top: 227px;
+    }
+
+    .label_checkbox {
+        width: 254px;
+        height: 28px;
+        left: 61px;
+        top: 226px;
+    }
+    .hline {
+        width: 295px;
+        height: 1px;
+        left: 20px;
+        top: 274px;
+    }
+
+    .social {
+        width: 46px;
+        height: 46px;
+        top: 295px;
+        width: 214px;
+        margin-left: 53px;
+        
+    }
+
+    .social a {
+        margin: 0 5px;
+    }    
+}
 
 
