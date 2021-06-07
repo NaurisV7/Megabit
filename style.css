@@ -104,6 +104,7 @@ h4 {
     background: #4066A5;
     z-index: 7;
     margin: 0;
+    border: none;
 }
 
 .inputfield {
@@ -187,36 +188,30 @@ h4 {
 
 /* FOOTER PART CSS*/
 
-.img_base1 {
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
     position: absolute;
-    width: 46px;
-    height: 46px;
-    left: 218px;
     top: 791px;
 }
 
-.img_base2 {
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    left: 284px;
-    top: 791px;
-}
 
-.img_base3 {
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    left: 350px;
-    top: 791px;
-}
 
-.img_base4 {
-    position: absolute;
+.social a {
     width: 46px;
     height: 46px;
-    left: 416px;
-    top: 791px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: 2px solid #E3E3E4;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 42px;
+    color: #131821;
+    opacity: 0.3;
 }
 
 /* ANIMATION PART */
@@ -237,9 +232,70 @@ h4 {
     box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
 }
 
-.img_base1:hover {
+.afacebook:hover {
     background: #4267B2;
     box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #4267B2;
+    color: #FFFFFF;
+    opacity: 1;
 }
+
+.afacebook:active {
+    background: #2F4A80;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #2F4A80;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.ainstagram:hover {
+
+    background: #C13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #C13584;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.ainstagram:active {
+    background: #8F2762;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #8F2762;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.atwitter:hover {
+    background: #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #1DA1F2;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.atwitter:active {
+    background: #177FBF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #177FBF;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.ayoutube:hover {
+    background: #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #FF0000;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.ayoutube:active {
+    background: #CC0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    border-color: #CC0000;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
 
 
