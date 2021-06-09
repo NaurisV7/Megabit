@@ -31,27 +31,28 @@
         </header>
         <!-- BODY PART -->
         <div class="mobdiv">
-            <body>
+            <main id="main">
                 <h1>Subscribe to newsletter</h1>
                 <h4>Subscribe to our newsletter and get 10% discount on pineapple glasses.</h4>
                 <hr class="vline">
                 <form class="hover_input">        
-                    <input type="text" class="inputfield  focus_input" name="email" placeholder="Type your email address here...">
-                    <button type="submit" class="button">
+                    <input type="text" id="input" class="inputfield  focus_input" name="email" placeholder="Type your email address here...">
+                    <button type="submit" class="button" id="button">
                         <img src="image/ic_arrow.svg" class="button_img">
                     </button>
                 </form>
+                <div id="container" class="container"></div>
                 <form>
                     <input type="checkbox" id="checkbox" class="checkbox">
                     <label for="checkbox" class="label_checkbox">
                         I agree to
                         <a href="#" class="label_a">terms of service</a>
                     </label>
-                </form>
-                <hr class="hline">
-            </body>
+                </form>                
+            </main>
             <!-- FOOTER PART -->
             <footer>
+                <hr class="hline">
                 <div class="social">
                     <a href="#" class="afacebook">
                         <i class="fab fa-facebook-f facebook" id="facebook"></i>
@@ -72,6 +73,7 @@
     </div>
     <div class="img">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
