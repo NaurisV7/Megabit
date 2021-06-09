@@ -16,11 +16,9 @@ button.addEventListener("click", function (e) {
         container.innerHTML = "<p>We are not accepting subscriptions from Colombia emails</p>.";
     } else {
         container.innerHTML = "";
-        document.getElementById("main").innerHTML = "<h1>sanaca</h1>";
+        document.querySelector(".winput").classList.add("divnone");
+        document.querySelector(".noinput").classList.remove("divnone");
+        document.querySelector(".hline").setAttribute("id", "newvline");
+        document.querySelector(".social").setAttribute("id", "newsocial");
     }
 })
-
-
-
-
-//container.innerHTML = "<p>We are not accepting subscriptions from Colombia emails.</p>"
