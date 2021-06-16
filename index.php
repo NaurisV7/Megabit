@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +22,7 @@
             <div class="header_div">
                 <a href="#" class="alogo">
                     <img src="image/Union.svg" class="logo">
-                    <img src="image/pineapple..svg" class="pineapple none">
+                    <img src="image/pineapple..svg" class="pineapple">
                 </a>
             </div>
 
@@ -36,25 +41,20 @@
                     <h1 class="subscribe" >Subscribe to newsletter</h1>
                     <h4 class="first_h4">Subscribe to our newsletter and get 10% discount on pineapple glasses.</h4>
                     <hr class="vline">
-                    <form class="hover_input">        
-                        <input type="text" id="input" class="inputfield  focus_input" name="email" placeholder="Type your email address here...">
-                        <button type="submit" class="button" id="button">
-                            <img src="image/ic_arrow.svg" class="button_img">
-                        </button>
-                    </form>
-                    <div id="container" class="container"></div>
-                    <form>
+                    <form action="subscribed.php" method="POST">
+                        <div class="hover_input">
+                            <input type="text" id="input" class="inputfield  focus_input" name="email" placeholder="Type your email address here...">
+                            <button type="submit" class="button" id="button" name="submit">
+                                <img src="image/ic_arrow.svg" class="button_img">
+                            </button>
+                        </div>
+                        <div id="container" class="container"></div>
                         <input type="checkbox" id="checkbox" class="checkbox">
                         <label for="checkbox" class="label_checkbox">
                             I agree to
                             <a href="#" class="label_a">terms of service</a>
                         </label>
                     </form>  
-                </div>
-                <div class="noinput divnone">
-                    <img src ="image/crown.svg" class="crown">
-                    <h1 class="thanks">Thanks for subscribing!</h1>
-                    <h4 class="discount">You have successfully subscribed to our email listing. Check your email for the discount code.</h4>
                 </div>
             </main>
             <!-- FOOTER PART -->

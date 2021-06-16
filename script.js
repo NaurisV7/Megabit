@@ -1,3 +1,4 @@
+
 let container = document.getElementById("container");
 let input = document.getElementById("input");
 let checkbox = document.getElementById("checkbox");
