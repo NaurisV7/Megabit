@@ -1,8 +1,9 @@
+<?php
 
+include_once "classes/user_validation.php";
 
-
-
-
+$check_error = new Validation();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,15 +42,15 @@
                     <h1 class="subscribe" >Subscribe to newsletter</h1>
                     <h4 class="first_h4">Subscribe to our newsletter and get 10% discount on pineapple glasses.</h4>
                     <hr class="vline">
-                    <form action="subscribed.php" method="POST">
+                    <form action="" method="POST">
                         <div class="hover_input">
                             <input type="text" id="input" class="inputfield  focus_input" name="email" placeholder="Type your email address here...">
-                            <button type="submit" class="button" id="button" name="submit">
+                            <button type="submit" class="button" id="button" value="submit" name="submit">
                                 <img src="image/ic_arrow.svg" class="button_img">
                             </button>
                         </div>
-                        <div id="container" class="container"></div>
-                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <div id="container" class="container"> <?php echo $check_error->printError(); ?></div>
+                        <input type="checkbox" id="checkbox" class="checkbox" name="checkbox">
                         <label for="checkbox" class="label_checkbox">
                             I agree to
                             <a href="#" class="label_a">terms of service</a>

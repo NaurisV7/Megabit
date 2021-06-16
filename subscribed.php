@@ -1,14 +1,3 @@
-<?php
-
-if (isset($_POST["submit"])) {
-    echo "<h2>" . $_POST['email'] . "</h2>";
-} else {
-    echo "<h2>nonono</h2>";
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
