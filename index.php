@@ -2,7 +2,7 @@
 
 include_once "classes/user_validation.php";
 
-$check_error = new Validation();
+$validator = new Validation();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +49,7 @@ $check_error = new Validation();
                                 <img src="image/ic_arrow.svg" class="button_img">
                             </button>
                         </div>
-                        <div id="container" class="container"> <?php echo $check_error->printError(); ?></div>
+                        <div id="container" class="container"> <?php $validator->printError(); ?></div>
                         <input type="checkbox" id="checkbox" class="checkbox" name="checkbox">
                         <label for="checkbox" class="label_checkbox">
                             I agree to

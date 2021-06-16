@@ -13,10 +13,10 @@ class Validation {
         $errors = $validation->validateForm();
 
         if ($errors) {
-            echo $errors;
+            return $errors;
         } else {
-            $new_user = new NewUser();
             header("Refresh:1; subscribed.php");
+            $new_user = new NewUser();            
             exit();
         }
     }
