@@ -1,7 +1,6 @@
 <?php
-    include "DB.php";
-    include "userinfo.php";
     include "viewuser.php";
+    include "delete.php";
 ?>
 
 
@@ -14,12 +13,29 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $users = new ViewUser();
-    $users->showAllEmails();
-
-
-    ?>
-    
+<form action="" method="POST">
+    <table>
+        
+            <tr>
+                <th>ID</th>
+                <th>EMAIL</th>
+                <th>DATE</th>
+                <th>DELETE</th>
+            </tr>
+            <?php
+            $users = new ViewUser();
+            echo $users->showAllEmails();
+        ?>
+        <button type="submit" name="delete" value="confirm">Delete selected</button>
+        
+    </table>
+</form>
 </body>
 </html>
+
+<?php
+
+if (isset($_POST['delete'])) {
+
+}
+

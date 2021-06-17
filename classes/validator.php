@@ -3,8 +3,8 @@
 class UserValidator {
 
     private $data;
-    private $errors = "";
-    private $fields = ['email', 'checkbox'];
+    private string $errors = "";
+    private array $fields = ['email', 'checkbox'];
 
     public function __construct($post_data) {
         $this->data = $post_data;         

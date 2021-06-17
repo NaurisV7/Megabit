@@ -2,23 +2,23 @@
 include_once "getuser.php";
 include_once "validator.php";
 class Validation {
-    public function checkUser () {
-        if (isset($_POST['submit'])) {
-            $this->printError();
+    
+    private string $errors = '';
+
+    public function validateUser (array $data) {
+        $validation = new UserValidator($_POST);
+        $errors = $validation->validateForm();
+        if (!$errors) {
+            header("Refresh:1; subscribed.php");
+            $new_user = new NewUser();
+            exit();
         }
+        return $this->errors = $errors;
+               
     }
 
     public function printError () {
-        $validation = new UserValidator($_POST);
-        $errors = $validation->validateForm();
-
-        if ($errors) {
-            return $errors;
-        } else {
-            header("Refresh:1; subscribed.php");
-            $new_user = new NewUser();            
-            exit();
-        }
+            return $this->errors;
     }
 }
 

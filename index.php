@@ -1,8 +1,11 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 include_once "classes/user_validation.php";
 
-$validator = new Validation();
+$validation = new Validation();
+$validation->validateUser($_POST);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +52,7 @@ $validator = new Validation();
                                 <img src="image/ic_arrow.svg" class="button_img">
                             </button>
                         </div>
-                        <div id="container" class="container"> <?php $validator->printError(); ?></div>
+                        <div id="container" class="container"> <?php echo $validation->printError(); ?></div>
                         <input type="checkbox" id="checkbox" class="checkbox" name="checkbox">
                         <label for="checkbox" class="label_checkbox">
                             I agree to

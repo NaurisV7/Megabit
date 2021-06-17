@@ -1,13 +1,15 @@
 <?php
+include_once "DB.php";
+class UserInfo {
 
-class UserInfo extends Db {
-
-    protected function getAllEmails () {
+    public function getAllEmails () {
         $sql = "SELECT * FROM emails";
-        $result = $this->connect()->query($sql);
-        $numRows = $result->num_rows;
+        $this->result = new Db();
+        $this->result = $this->result->connect();
+        $this->result = $this->result->query($sql);
+        $numRows = $this->result->num_rows;
         if ($numRows > 0) {
-            while ($row = $result->fetch_assoc()) {
+            while ($row = $this->result->fetch_assoc()) {
                 $data[] = $row;
             }
             return $data;
