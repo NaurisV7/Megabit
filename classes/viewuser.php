@@ -16,8 +16,7 @@ class ViewUser {
                     <td><?php echo $data['email']; ?></td>
                     <td><?php echo $data['created_at']; ?></td>
                     <td>
-                        <input type="checkbox" name="checkbox">
-                        <input type="hidden" name="id" value="<?php echo $data['id'];?>">
+                        <input type="checkbox" name="id[]" value="<?php echo $data['id'];?>">
                     </td>
                 </tr>
                 <?php
